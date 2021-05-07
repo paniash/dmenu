@@ -7,11 +7,15 @@ static int fuzzy = 0;                      /* -F  option; if 0, dmenu doesn't us
 static const char *fonts[] = {
 	"Iosevka:size=12"
 };
+
+static const char col_cyan1[]   = "#005577";
+static const char col_cyan2[]   = "#007777";
+
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
 static const char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
 	[SchemeNorm] = { "#bbbbbb", "#222222" },
-	[SchemeSel] = { "#050000", "#007777" },
+	[SchemeSel] = { "#050000", col_cyan2},
 	[SchemeOut] = { "#000000", "#00ffff" },
 };
 /* -l option; if nonzero, dmenu uses vertical list with given number of lines */
